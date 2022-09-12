@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
   <body>
@@ -12,7 +12,8 @@
       <div class="time"></div>
     </header>
     <main>
-      <div class="result__container"></div>
+      <div class="result__container result__container--prev"></div>
+      <div class="result__container result__container--current"></div>
       <div class="buttons__container">
         <button type="button" id="clear" class="btn light-grey">AC</button>
         <button type="button" id="addMinusSign" class="btn light-grey">
@@ -38,5 +39,6 @@
       </div>
     </main>
     <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="operations.js"></script>
   </body>
 </html>
