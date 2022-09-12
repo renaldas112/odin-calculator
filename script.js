@@ -77,6 +77,15 @@ buttonDot.onclick = function () {
 
 const plus = document.getElementById("plus");
 
-plus.onclick = function (inputNumber) {
-    //ka darys + mygtukas
+plus.onclick = function () {
+  disableButtonAfterClicked();
+  resultContainer.innerHTML += "+";
+  inputNumber += "+";
 }
+
+const disableButtonAfterClicked = () => {
+  const BUTTONS = document.querySelectorAll(".light-grey, .orange");
+  for (const BUTTON of BUTTONS) {
+    BUTTON.disabled = true;
+  }
+};
