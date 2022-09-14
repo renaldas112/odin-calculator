@@ -12,33 +12,36 @@
       <div class="time"></div>
     </header>
     <main>
-      <div class="result__container result__container--prev"></div>
-      <div class="result__container result__container--current"></div>
+      <div
+        data-previous-operand
+        class="result__container result__container--prev"
+      ></div>
+      <div
+        data-current-operand
+        class="result__container result__container--current"
+      ></div>
       <div class="buttons__container">
-        <button type="button" id="clear" class="btn light-grey">AC</button>
-        <button type="button" id="addMinusSign" class="btn light-grey">
-          +-
-        </button>
-        <button type="button" id="percentage" class="btn light-grey">%</button>
-        <button type="button" id="divide" class="btn divide orange">÷</button>
-        <button type="button" id="seven" class="btn grey">7</button>
-        <button type="button" id="eight" class="btn grey">8</button>
-        <button type="button" id="nine" class="btn grey">9</button>
-        <button type="button" id="times" class="btn times orange">×</button>
-        <button type="button" id="four" class="btn grey">4</button>
-        <button type="button" id="five" class="btn grey">5</button>
-        <button type="button" id="six" class="btn grey">6</button>
-        <button type="button" id="minus" class="btn minus orange">-</button>
-        <button type="button" id="one" class="btn grey">1</button>
-        <button type="button" id="two" class="btn grey">2</button>
-        <button type="button" id="three" class="btn grey">3</button>
-        <button type="button" id="plus" class="btn plus orange">+</button>
-        <button type="button" id="zero" class="btn grey btn-double">0</button>
-        <button type="button" id="dot" class="btn grey">.</button>
-        <button type="button" id="equals" class="btn equal orange">=</button>
+        <button data-all-clear class="btn light-grey">AC</button>
+        <button data-delete class="btn light-grey">Del</button>
+        <button data-operation class="btn light-grey">%</button>
+        <button data-operation class="btn divide orange">÷</button>
+        <button data-number class="btn grey">7</button>
+        <button data-number class="btn grey">8</button>
+        <button data-number class="btn grey">9</button>
+        <button data-operation class="btn times orange">×</button>
+        <button data-number class="btn grey">4</button>
+        <button data-number class="btn grey">5</button>
+        <button data-number class="btn grey">6</button>
+        <button data-operation class="btn minus orange">-</button>
+        <button data-number class="btn grey">1</button>
+        <button data-number class="btn grey">2</button>
+        <button data-number class="btn grey">3</button>
+        <button data-operation class="btn plus orange">+</button>
+        <button data-number class="btn grey btn-double">0</button>
+        <button data-number class="btn grey">.</button>
+        <button data-equals class="btn equal orange">=</button>
       </div>
     </main>
-    <script type="text/javascript" src="script.js"></script>
-    <script type="text/javascript" src="operations.js"></script>
+    <script type="text/javascript" defer src="script.js"></script>
   </body>
 </html>
