@@ -7,7 +7,7 @@ JavaScript Foundations | "Project: Calculator" from "theodinproject.com"
 </div>
 
 ## Calculator
-IOS inspired Calculator (was written by "Objective Programming" method) <br />
+IOS inspired Calculator (was written with "Objective Programming" method) <br />
 Created using JavaScript, HTML5 and SCSS for main styling
 <br />
 <br />
