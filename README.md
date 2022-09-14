@@ -12,7 +12,7 @@ Created using JavaScript, HTML5 and SCSS for main styling
 <br />
 <br />
 
-Project template by KasTasElis - https://github.com/KasTasElis/starter-kit
+Project template by [KasTasElis]() - https://github.com/KasTasElis/starter-kit
 <br />
 MIT © [Renaldas112]()
 
