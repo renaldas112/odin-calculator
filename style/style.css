@@ -11,6 +11,19 @@ body {
   font-family: "IOS font";
 }
 
+@media only screen and (max-width: 600px) {
+  .buttons__container {
+    width: 85%;
+  }
+  .btn {
+    font-size: 30px;
+    width: 75px;
+    height: 75px;
+  }
+  .btn-double {
+    width: 165px;
+  }
+}
 main {
   max-width: 445px;
   margin: auto;
@@ -108,21 +121,4 @@ main {
 }
 .buttons__container .orange {
   background-color: #f69906;
-}
-
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: red !important;
-  }
-  .buttons__container {
-    width: 85%;
-  }
-  .btn {
-    font-size: 30px;
-    width: 75px;
-    height: 75px;
-  }
-  .btn-double {
-    width: 165px;
-  }
 }
