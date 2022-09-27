@@ -1,1 +1,128 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  background-color: #000;
+  font-family: Arial;
+}
+
+@font-face {
+  font-family: "IOS font";
+  src: url(../SF-Pro.ttf);
+}
+* {
+  font-family: "IOS font";
+}
+
+main {
+  max-width: 445px;
+  margin: auto;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.result__container {
+  width: 100%;
+  background-color: #000;
+  border: none;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.result__container--prev {
+  height: 75px;
+  font-size: 2.5rem;
+}
+.result__container--current {
+  height: 75px;
+  font-size: 3.5rem;
+}
+
+.buttons__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  width: 100%;
+  gap: 15px;
+}
+.buttons__container .btn {
+  border: none;
+  border-radius: 50px;
+  font-size: 40px;
+  width: 100px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.buttons__container .minus {
+  font-size: 5rem;
+}
+.buttons__container .divide,
+.buttons__container .plus,
+.buttons__container .equal,
+.buttons__container .times {
+  font-size: 3.5rem;
+}
+.buttons__container .btn-double {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  width: 215px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 40px;
+}
+.buttons__container .light-grey {
+  background-color: #a0a0a0;
+  color: #000;
+}
+.buttons__container .grey,
+.buttons__container .orange {
+  color: #fff;
+}
+.buttons__container .grey {
+  background-color: #313131;
+}
+.buttons__container .orange {
+  background-color: #f69906;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: red !important;
+  }
+  .buttons__container {
+    width: 85%;
+  }
+  .btn {
+    font-size: 30px;
+    width: 75px;
+    height: 75px;
+  }
+  .btn-double {
+    width: 165px;
+  }
+}
